@@ -8,3 +8,6 @@ DOMAIN-SUFFIX,bitpay.com
 # magiceden
 DOMAIN-SUFFIX,magiceden.io
 DOMAIN-SUFFIX,bscrpc.com
+DOMAIN-KEYWORD,bsc-
+DOMAIN-SUFFIX,ankr.com
+DOMAIN-SUFFIX,jsdelivr.net
