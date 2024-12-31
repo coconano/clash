@@ -11,3 +11,6 @@ DOMAIN-SUFFIX,bscrpc.com
 DOMAIN-KEYWORD,bsc-
 DOMAIN-SUFFIX,ankr.com
 DOMAIN-SUFFIX,jsdelivr.net
+# radical foreign
+NOT,((GEOIP,CN,no-resolve))
+NOT,((GEOIP,LAN))
