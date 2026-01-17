@@ -115,3 +115,17 @@ DOMAIN-KEYWORD,claude
 DOMAIN-KEYWORD,colab
 DOMAIN-KEYWORD,developerprofiles
 DOMAIN-KEYWORD,generativelanguage
+
+
+# ========================================
+# Gemini Web Minimal Patch Rules
+# 仅用于修复 gemini.google.com 对话 / 状态异常
+# ========================================
+
+# ---- Gemini Web 内部 RPC / signaling（clients6）----
+DOMAIN-SUFFIX,waa-pa.clients6.google.com
+DOMAIN-SUFFIX,signaler-pa.clients6.google.com
+
+# ---- Gemini Web API 调度（部分请求不走 generativelanguage.googleapis.com）----
+DOMAIN-SUFFIX,apis.google.com
+
