@@ -125,7 +125,9 @@ DOMAIN-KEYWORD,generativelanguage
 # ---- Gemini Web 内部 RPC / signaling（clients6）----
 DOMAIN-SUFFIX,waa-pa.clients6.google.com
 DOMAIN-SUFFIX,signaler-pa.clients6.google.com
+DOMAIN-SUFFIX,alkalimakersuite-pa.clients6.google.com
 
 # ---- Gemini Web API 调度（部分请求不走 generativelanguage.googleapis.com）----
 DOMAIN-SUFFIX,apis.google.com
+
 
