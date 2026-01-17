@@ -118,16 +118,39 @@ DOMAIN-KEYWORD,generativelanguage
 
 
 # ========================================
-# Gemini Web Minimal Patch Rules
-# 仅用于修复 gemini.google.com 对话 / 状态异常
+# Google Gemini - Core / Static / Backend (Critical)
 # ========================================
 
-# ---- Gemini Web 内部 RPC / signaling（clients6）----
+
+# ===============================
+# 【DOMAIN】核心服务域名（最优先）
+# ===============================
+
+DOMAIN,gemini.google.com
+DOMAIN,accounts.google.com
+DOMAIN,www.google.com
+DOMAIN,www.google.nl
+
+
+# ===============================
+# 【DOMAIN-SUFFIX】静态资源 / 内容存储
+# ===============================
+
+DOMAIN-SUFFIX,gstatic.com
+DOMAIN-SUFFIX,fonts.gstatic.com
+DOMAIN-SUFFIX,googleusercontent.com
+DOMAIN-SUFFIX,lh3.google.com
+
+
+# ===============================
+# 【DOMAIN-SUFFIX】后台 API / 通信通道（Gemini 功能关键）
+# ===============================
+
+DOMAIN-SUFFIX,apis.google.com
+DOMAIN-SUFFIX,ogads-pa.clients6.google.com
 DOMAIN-SUFFIX,waa-pa.clients6.google.com
 DOMAIN-SUFFIX,signaler-pa.clients6.google.com
 DOMAIN-SUFFIX,alkalimakersuite-pa.clients6.google.com
 
-# ---- Gemini Web API 调度（部分请求不走 generativelanguage.googleapis.com）----
-DOMAIN-SUFFIX,apis.google.com
 
 
