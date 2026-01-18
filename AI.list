@@ -160,6 +160,35 @@ DOMAIN,one.google.com
 DOMAIN,payments.google.com
 DOMAIN,play.google.com
 
+# ===============================
+# OpenAI - Missing Critical Dependencies (Patch)
+# ===============================
+# ---- OpenAI Login / Clients ----
+DOMAIN-SUFFIX,auth.openai.com
+DOMAIN,desktop.chat.openai.com
+DOMAIN,ios.chat.openai.com
+DOMAIN,android.chat.openai.com
+
+# ---- OpenAI Feature Gate / Stability ----
+DOMAIN-SUFFIX,statsig.com
+DOMAIN-SUFFIX,statsigapi.net
+
+# ---- OpenAI Org / Subscription ----
+DOMAIN-SUFFIX,workos.com
+DOMAIN-SUFFIX,workoscdn.com
+DOMAIN-SUFFIX,imgix.net
+
+# ---- Notification / Email ----
+DOMAIN-SUFFIX,ct.sendgrid.net
+
+# ---- RUM / Stability ----
+DOMAIN-SUFFIX,datadoghq.com
+
+# ---- OpenAI Security / Risk ----
+DOMAIN-SUFFIX,arkoselabs.com
+
+# ---- OpenAI Error / Telemetry ----
+DOMAIN-SUFFIX,ingest.sentry.io
 
 
 
