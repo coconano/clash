@@ -152,5 +152,15 @@ DOMAIN-SUFFIX,waa-pa.clients6.google.com
 DOMAIN-SUFFIX,signaler-pa.clients6.google.com
 DOMAIN-SUFFIX,alkalimakersuite-pa.clients6.google.com
 
+# ===============================
+# 【DOMAIN】google支付相关
+# ===============================
+
+DOMAIN,one.google.com
+DOMAIN,payments.google.com
+DOMAIN,play.google.com
+
+
+
 
 
