@@ -131,6 +131,7 @@ DOMAIN,accounts.google.com
 DOMAIN,www.google.com
 DOMAIN,www.google.nl
 DOMAIN,www.googletagmanager.com
+DOMAIN,notebooklm.google.com
 
 
 # ===============================
@@ -191,6 +192,7 @@ DOMAIN-SUFFIX,arkoselabs.com
 
 # ---- OpenAI Error / Telemetry ----
 DOMAIN-SUFFIX,ingest.sentry.io
+
 
 
 
