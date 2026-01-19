@@ -130,6 +130,7 @@ DOMAIN,gemini.google.com
 DOMAIN,accounts.google.com
 DOMAIN,www.google.com
 DOMAIN,www.google.nl
+DOMAIN,www.googletagmanager.com
 
 
 # ===============================
@@ -140,6 +141,7 @@ DOMAIN-SUFFIX,gstatic.com
 DOMAIN-SUFFIX,fonts.gstatic.com
 DOMAIN-SUFFIX,googleusercontent.com
 DOMAIN-SUFFIX,lh3.google.com
+DOMAIN-SUFFIX,notebooklm.google
 
 
 # ===============================
@@ -189,6 +191,7 @@ DOMAIN-SUFFIX,arkoselabs.com
 
 # ---- OpenAI Error / Telemetry ----
 DOMAIN-SUFFIX,ingest.sentry.io
+
 
 
 
