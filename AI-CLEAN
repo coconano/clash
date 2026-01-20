@@ -1,0 +1,60 @@
+# ========================================
+# OpenAI / ChatGPT Domain Routing Rules
+# 包含：官网、API、登录验证、CDN、支付及安全组件
+# Update: 2026-01
+# ========================================
+
+# ---- 精确域名匹配 (DOMAIN) ----
+DOMAIN,chatgpt.com
+DOMAIN,openai.com
+DOMAIN,ai.com
+DOMAIN,desktop.chat.openai.com
+DOMAIN,ios.chat.openai.com
+DOMAIN,android.chat.openai.com
+DOMAIN,openaiapi-site.azureedge.net
+
+# ---- 核心服务后缀 (DOMAIN-SUFFIX) ----
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,chatgpt.com
+DOMAIN-SUFFIX,oaistatic.com
+DOMAIN-SUFFIX,oaiusercontent.com
+DOMAIN-SUFFIX,chat.openai.com
+DOMAIN-SUFFIX,platform.openai.com
+DOMAIN-SUFFIX,pay.openai.com
+
+# ---- 登录与身份验证 (Auth / Security) ----
+DOMAIN-SUFFIX,auth.openai.com
+DOMAIN-SUFFIX,auth0.openai.com
+DOMAIN-SUFFIX,arkoselabs.com
+DOMAIN-SUFFIX,client-api.arkoselabs.com
+DOMAIN-SUFFIX,identrust.com
+
+# ---- 基础设施与 CDN (Infrastructure) ----
+DOMAIN-SUFFIX,azureedge.net
+DOMAIN-SUFFIX,imgix.net
+
+# ---- 支付与订阅 (Billing / Stripe) ----
+DOMAIN-SUFFIX,stripe.com
+DOMAIN-SUFFIX,invoice.stripe.com
+
+# ---- 功能开关、统计与监控 (Analytics / Feature Gates) ----
+DOMAIN-SUFFIX,statsig.com
+DOMAIN-SUFFIX,statsigapi.net
+DOMAIN-SUFFIX,events.statsigapi.net
+DOMAIN-SUFFIX,featuregates.org
+DOMAIN-SUFFIX,launchdarkly.com
+DOMAIN-SUFFIX,segment.io
+DOMAIN-SUFFIX,sentry.io
+DOMAIN-SUFFIX,ingest.sentry.io
+DOMAIN-SUFFIX,datadoghq.com
+
+# ---- 企业级/组织管理依赖 (Enterprise / WorkOS) ----
+DOMAIN-SUFFIX,workos.com
+DOMAIN-SUFFIX,workoscdn.com
+
+# ---- 通知与邮件 (Notification) ----
+DOMAIN-SUFFIX,ct.sendgrid.net
+
+# ---- 关键词兜底 (DOMAIN-KEYWORD) ----
+DOMAIN-KEYWORD,openai
+DOMAIN-KEYWORD,chatgpt
