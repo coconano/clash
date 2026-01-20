@@ -1,36 +1,28 @@
 # ========================================
-# AI Related Domain Routing Rules
-# 覆盖：OpenAI / Claude / Gemini / DeepMind / xAI / Perplexity / Copilot / 依赖服务
-# Merge Date: 2026-01
+# AI Related Domain Routing Rules (Excluded OpenAI/ChatGPT)
+# 覆盖：Claude / Gemini / DeepMind / xAI / Perplexity / Copilot / 依赖服务
+# Update: 2026-01
 # ========================================
 
-
 # ===============================
-# 【DOMAIN】精确域名匹配（最高优先级）
+# 【DOMAIN】精确域名匹配
 # ===============================
-
 DOMAIN,copilot.microsoft.com
-DOMAIN,openaiapi-site.azureedge.net
-
-# ---- Google AI / Gemini ----
 DOMAIN,ai.google.dev
 DOMAIN,alkalimakersuite-pa.clients6.google.com
-
+DOMAIN,gemini.google.com
+DOMAIN,accounts.google.com
+DOMAIN,www.google.com
+DOMAIN,www.google.nl
+DOMAIN,www.googletagmanager.com
+DOMAIN,notebooklm.google.com
+DOMAIN,one.google.com
+DOMAIN,payments.google.com
+DOMAIN,play.google.com
 
 # ===============================
 # 【DOMAIN-SUFFIX】域名后缀匹配
 # ===============================
-
-# ---- OpenAI / ChatGPT ----
-DOMAIN-SUFFIX,openai.com
-DOMAIN-SUFFIX,chatgpt.com
-DOMAIN-SUFFIX,chat.openai.com
-DOMAIN-SUFFIX,platform.openai.com
-DOMAIN-SUFFIX,pay.openai.com
-DOMAIN-SUFFIX,oaistatic.com
-DOMAIN-SUFFIX,oaiusercontent.com
-DOMAIN-SUFFIX,openaiapi-site.azureedge.net
-DOMAIN-SUFFIX,ai.com
 
 # ---- Anthropic / Claude ----
 DOMAIN-SUFFIX,anthropic.com
@@ -47,6 +39,11 @@ DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
 DOMAIN-SUFFIX,apis.google.com
 DOMAIN-SUFFIX,googleapis.com
 DOMAIN-SUFFIX,generativeai.google
+DOMAIN-SUFFIX,gstatic.com
+DOMAIN-SUFFIX,fonts.gstatic.com
+DOMAIN-SUFFIX,googleusercontent.com
+DOMAIN-SUFFIX,lh3.google.com
+DOMAIN-SUFFIX,notebooklm.google
 
 # ---- DeepMind ----
 DOMAIN-SUFFIX,deepmind.com
@@ -70,131 +67,33 @@ DOMAIN-SUFFIX,forefront.ai
 DOMAIN-SUFFIX,meta.ai
 DOMAIN-SUFFIX,metademolab.com
 
-# ---- Auth / 验证 / 安全 ----
-DOMAIN-SUFFIX,auth0.com
-DOMAIN-SUFFIX,auth0.openai.com
-DOMAIN-SUFFIX,client-api.arkoselabs.com
-DOMAIN-SUFFIX,challenges.cloudflare.com
-DOMAIN-SUFFIX,identrust.com
+# ---- 基础服务 API / 通信通道 ----
+DOMAIN-SUFFIX,ogads-pa.clients6.google.com
+DOMAIN-SUFFIX,waa-pa.clients6.google.com
+DOMAIN-SUFFIX,signaler-pa.clients6.google.com
+DOMAIN-SUFFIX,alkalimakersuite-pa.clients6.google.com
 
-# ---- 统计 / Feature Gate / 监控 ----
-DOMAIN-SUFFIX,events.statsigapi.net
-DOMAIN-SUFFIX,featuregates.org
+# ---- 公共安全 / 验证 ----
+DOMAIN-SUFFIX,auth0.com
+DOMAIN-SUFFIX,challenges.cloudflare.com
+
+# ---- 统计 / 监控 / 客服（通用部分） ----
 DOMAIN-SUFFIX,launchdarkly.com
 DOMAIN-SUFFIX,segment.io
 DOMAIN-SUFFIX,sentry.io
-
-# ---- 客服 / 交互组件 ----
 DOMAIN-SUFFIX,intercom.io
 DOMAIN-SUFFIX,intercomcdn.com
-
-# ---- 支付 ----
-DOMAIN-SUFFIX,stripe.com
-DOMAIN-SUFFIX,invoice.stripe.com
 
 # ---- CDN / 基础设施 ----
 DOMAIN-SUFFIX,azureedge.net
 DOMAIN-SUFFIX,bing.com
 DOMAIN-SUFFIX,ping0.cc
 
-
-# ===============================
-# 【GEOSITE】规则
-# ===============================
-
-GEOSITE,ai
-
-
 # ===============================
 # 【DOMAIN-KEYWORD】关键词兜底
 # ===============================
-
-DOMAIN-KEYWORD,openai
 DOMAIN-KEYWORD,anthropic
 DOMAIN-KEYWORD,claude
 DOMAIN-KEYWORD,colab
 DOMAIN-KEYWORD,developerprofiles
 DOMAIN-KEYWORD,generativelanguage
-
-
-# ========================================
-# Google Gemini - Core / Static / Backend (Critical)
-# ========================================
-
-
-# ===============================
-# 【DOMAIN】核心服务域名（最优先）
-# ===============================
-
-DOMAIN,gemini.google.com
-DOMAIN,accounts.google.com
-DOMAIN,www.google.com
-DOMAIN,www.google.nl
-DOMAIN,www.googletagmanager.com
-DOMAIN,notebooklm.google.com
-
-
-# ===============================
-# 【DOMAIN-SUFFIX】静态资源 / 内容存储
-# ===============================
-
-DOMAIN-SUFFIX,gstatic.com
-DOMAIN-SUFFIX,fonts.gstatic.com
-DOMAIN-SUFFIX,googleusercontent.com
-DOMAIN-SUFFIX,lh3.google.com
-DOMAIN-SUFFIX,notebooklm.google
-
-
-# ===============================
-# 【DOMAIN-SUFFIX】后台 API / 通信通道（Gemini 功能关键）
-# ===============================
-
-DOMAIN-SUFFIX,apis.google.com
-DOMAIN-SUFFIX,ogads-pa.clients6.google.com
-DOMAIN-SUFFIX,waa-pa.clients6.google.com
-DOMAIN-SUFFIX,signaler-pa.clients6.google.com
-DOMAIN-SUFFIX,alkalimakersuite-pa.clients6.google.com
-
-# ===============================
-# 【DOMAIN】google支付相关
-# ===============================
-
-DOMAIN,one.google.com
-DOMAIN,payments.google.com
-DOMAIN,play.google.com
-
-# ===============================
-# OpenAI - Missing Critical Dependencies (Patch)
-# ===============================
-# ---- OpenAI Login / Clients ----
-DOMAIN-SUFFIX,auth.openai.com
-DOMAIN,desktop.chat.openai.com
-DOMAIN,ios.chat.openai.com
-DOMAIN,android.chat.openai.com
-
-# ---- OpenAI Feature Gate / Stability ----
-DOMAIN-SUFFIX,statsig.com
-DOMAIN-SUFFIX,statsigapi.net
-
-# ---- OpenAI Org / Subscription ----
-DOMAIN-SUFFIX,workos.com
-DOMAIN-SUFFIX,workoscdn.com
-DOMAIN-SUFFIX,imgix.net
-
-# ---- Notification / Email ----
-DOMAIN-SUFFIX,ct.sendgrid.net
-
-# ---- RUM / Stability ----
-DOMAIN-SUFFIX,datadoghq.com
-
-# ---- OpenAI Security / Risk ----
-DOMAIN-SUFFIX,arkoselabs.com
-
-# ---- OpenAI Error / Telemetry ----
-DOMAIN-SUFFIX,ingest.sentry.io
-
-
-
-
-
-
